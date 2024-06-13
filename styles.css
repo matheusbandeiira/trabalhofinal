@@ -1,0 +1,187 @@
+body {
+    background-color: #e8f4fd;
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.titulo{
+    text-align: center;
+    color: #333333;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.form {
+    margin-bottom: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.form label {
+    display: block;
+    margin-bottom: 0px;
+}
+
+.form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.form .buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form button {
+    flex: 1;
+    padding: 10px;
+    margin-right: 10px;
+    background-color: #635ab5;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px
+}
+
+.container div.card{
+    background-image: linear-gradient(45deg, #e5755b, #e0bc9e );
+}
+.container div.card2{
+    background-image: linear-gradient(45deg, #6eb1c9, #86bb8a);
+}
+
+div#resultado h3{
+    font-size: 17px;
+    color: #00000098;
+    background-image: linear-gradient(60deg, #618764, #5c95a9);
+    margin: 30px 300px 10px ;
+    border-radius: 10px;
+}
+
+div#resultado h3.h3titulo{
+    font-size: 17px;
+    color: #00000098;
+    background-image: linear-gradient(60deg, #ab8e77, #b05945);
+    margin: 30px 300px 10px ;
+    border-radius: 10px;
+}
+
+
+.cards {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    color: #4d0f01;
+    border-radius: 10px;
+    flex: 1;
+    padding: 20px;
+    margin-right: 10px;
+    text-align: center;
+}
+.card2 {
+    color: #082f3d;
+    border-radius: 10px;
+    flex: 1;
+    padding: 20px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.card:hover {
+    transform: scale(1.08);
+    transition: .6s;
+}
+.card2:hover {
+    transform: scale(1.08);
+    transition: .6s;
+}
+
+.card h4 {
+    margin-top: 0;
+}
+.card2 h4 {
+    margin-top: 0;
+}
+
+.fade {
+    transition: opacity 0.5s ease;
+ }
+ 
+ .resultado-oculto {
+    opacity: 0;
+ }
+ 
+ .resultado-visivel {
+    opacity: 1;
+ }
+ 
+
+.contratacao-btn {
+    background-color: #674b2ebf; 
+    color: #ffffff; 
+    border: none; 
+    border-radius: 20px;
+    padding: 10px 20px; 
+    cursor: pointer;
+}
+
+.card2-btn {
+    background-color: #2e6367bf; 
+}
+
+.contratacao-btn:hover {
+    transform: scale(1.05);
+}
+
+#comparacaoPrecos table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#comparacaoPrecos th, #comparacaoPrecos td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+#comparacaoPrecos th {
+    background-color: #007bff;
+    color: #ddd;
+}
+
+#comparacaoPrecos tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.container.cente {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#resultado {
+
+    text-align: center;
+    margin-top: 20px;
+}
+
+#comparacaoPrecos {
+    text-align: center;
+    align-items: center;
+    margin-top: 20px;
+    color: #555555;
+    background-color: #cfe2f3;
+    border-radius: 25px;
+}

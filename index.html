@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Comparação de Planos de Saúde</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="topo"></div>
+<div class="container center">
+    <h1 class="titulo">Comparação de Planos de Saúde</h1>
+    <div class="form">
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" placeholder="Idade">
+
+        <label for="peso">Peso (kg):</label>
+        <input type="number" id="peso" placeholder="Peso">
+
+        <label for="altura">Altura (m):</label>
+        <input type="number" id="altura" placeholder="Altura">
+
+        <div class="buttons">
+            <button onclick="calcular()">Consultar Valores</button>
+            <button onclick="mostrarTabela()">Tabela de Comparação</button>
+        </div>
+    </div>
+
+    <div id="resultado" class="resultado-oculto fade">
+        <h2>Resultados</h2>
+        <h3>VitalCare Saúde</h3>
+        <div class="cards">
+            <div class="card2">
+                <h4>Básico</h4>
+                <p id="precoBasicoA">-</p>
+                <p><strong>Benefícios:</strong></p>
+                <ul>
+                    <li>Cobertura básica de consultas médicas.</li>
+                    <li>Exames laboratoriais.</li>
+                    <li>Atendimento de emergência básico.</li>
+                </ul>
+                <div class="button-wrapper">
+                    <button class="contratacao-btn card2-btn">Contratar do Plano</button>
+                </div>
+            </div>
+            <div class="card2">
+                <h4>Standard</h4>
+                <p id="precoStandardA">-</p>
+                <p><strong>Benefícios:</strong></p>
+                <ul>
+                    <li>Cobertura completa de consultas médicas</li>
+                    <li>Exames de imagem</li>
+                    <li>Atendimento de emergência avançados.</li>
+                </ul>
+                <div class="button-wrapper">
+                    <button class="contratacao-btn card2-btn">Contratar do Plano</button>
+                </div>
+            </div>
+            <div class="card2">
+                <h4>Premium</h4>
+                <p id="precoPremiumA">-</p>
+                <p><strong>Benefícios:</strong></p>
+                <ul>
+                    <li>Cobertura completa de consultas médicas</li>
+                    <li>Exames de imagem avançados</li>
+                    <li>Hospitalização em hospitais de referência.</li>
+                    <li>Tratamentos especializados.</li>
+                </ul>
+                <div class="button-wrapper">
+                    <button class="contratacao-btn card2-btn">Contratar Plano</button>
+                </div>
+            </div>
+        </div>
+        
+        <h3 class="h3titulo">MedSecure Planos</h3>
+        <div class="cards">
+            <div class="card">
+                <h4>Básico</h4>
+                <p id="precoBasicoB">-</p>
+                <p><strong>Benefícios:</strong></p>
+                <ul>
+                    <li>Cobertura básica de consultas médicas.</li>
+                    <li>Exames laboratoriais.</li>
+                    <li>Atendimento de emergência básico.</li>
+                </ul>
+                <div class="button-wrapper">
+                    <button class="contratacao-btn">Contratar do Plano</button>
+                </div>
+            </div>
+            <div class="card">
+                <h4>Standard</h4>
+                <p id="precoStandardB">-</p>
+                <p><strong>Benefícios:</strong></p>
+                <ul>
+                    <li>Cobertura completa de consultas médicas</li>
+                    <li>Exames de imagem</li>
+                    <li>Atendimento de emergência avançados.</li>
+                </ul>
+                <div class="button-wrapper">
+                    <button class="contratacao-btn">Contratar do Plano</button>
+                </div>
+            </div>
+            <div class="card">
+                <h4>Premium</h4>
+                <p id="precoPremiumB">-</p>
+                <p><strong>Benefícios:</strong></p>
+                <ul>
+                    <li>Cobertura completa de consultas médicas</li>
+                    <li>Exames de imagem avançados</li>
+                    <li>Hospitalização em hospitais de referência.</li>
+                    <li>Tratamentos especializados.</li>
+                </ul>
+                <div class="button-wrapper">
+                    <button class="contratacao-btn">Contratar do Plano</button>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <div id="comparacaoPrecos" class="fade" style="display: none;">
+        <h2>Comparação de Preços</h2>
+        <table>
+            <tr>
+                <th>Plano</th>
+                <th>VitalCare Saúde</th>
+                <th>MedSecure Planos</th>
+            </tr>
+            <tr>
+                <td>Básico</td>
+                <td id="precoBasicoATexto">-</td>
+                <td id="precoBasicoBTexto">-</td>
+            </tr>
+            <tr>
+                <td>Standard</td>
+                <td id="precoStandardATexto">-</td>
+                <td id="precoStandardBTexto">-</td>
+            </tr>
+            <tr>
+                <td>Premium</td>
+                <td id="precoPremiumATexto">-</td>
+                <td id="precoPremiumBTexto">-</td>
+            </tr>
+            <tr>
+                <td>Planos Mais Vantajosos</td>
+                <td colspan="2" id="planoMaisVantajoso">-</td>
+            </tr>                                  
+        </table>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
